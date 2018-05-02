@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Личный сайт студента GeekBrains</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="content">
+		<div id="header">
+			<a href="index.html">Главная</a> <span>/</span> 
+			<a href="pazzle.html">Загадки</a> <span>/</span>
+			<a href="guess.html">Угадайка</a> <span>/</span>
+			<a href="guess-2.html">Угадайка мультиплеер</a> <span>/</span>
+			<a href="foto.html">Фотоальбом</a>			
+		</div>
+				
+		<h1>Личный сайт студента GeekBrains</h1>
+		
+		<div id="center">
+			<h3>Игра в загадки</h3>	
+			
+			<div id="AnswerResalt">
+				<h4>Значения ваших ответов:</h4>
+				<p id="couter_attempt1.1"></p>
+				<p id="couter_attempt2.1"></p>
+				<p id="couter_attempt3.1"></p>
+				<p id="couter_attempt1.2"></p>
+				<p id="couter_attempt2.2"></p>				
+				<p id="couter_attempt3.2"></p>
+				<p id="couter_attempt1.3"></p>
+				<p id="couter_attempt2.3"></p>
+				<p id="couter_attempt3.3"></p>
+				<p id="couter_attempt1.4"></p>
+				<p id="couter_attempt2.4"></p>
+				<p id="couter_attempt3.4"></p>				
+			</div>
+
+			<div id=box_pazzle>			
+				<p> Вас приветствует игра - Загадки. Вам предстоит ответить на 3 философских вопроса. Три определения, подводящих вас к пониманию того, как смыслы рождают смыслы их объясняющие.</p>
+				<p> "Носитель, используемый для передачи сообщений в системе связи, не зависимо от их функции:" </p><!-- Один сигнал, определяет множество смыслов, которыми он может быть представлен --><!--Cигнал - представление информации отправителем-->
+				<input type="text" id="UserAnswer1"> <span id="AnswerResalt1"></span>
+				<p> "Сведения, используемые для реализации назначения системы связи, не зависимо от формы их представления:"</p><!-- Одна информация, определяет множество сигналов, которой её можно представить -->
+				<input type="text" id="UserAnswer2" > <span id="AnswerResalt2"></span>
+				<p> "Предназначение, генерирующее сигналы связи, не зависимо от данных сведений представляющих его:" </p>
+				<input type="text" id="UserAnswer3"> <span id="AnswerResalt3"></span><!--Один смысл, определяет множество информации, которая может его представить--><!--Смысл - представление информации адресатом -->
+				
+				<div id="resalt"></div>
+				
+				<br>
+				<a onclick="playPazzle()"> Ответить </a>
+			</div>
+		</div>
+	</div>	
+	
+	<div id="footer">
+		Copyright ©; 2017 <a href="https://geekbrains.ru/">GeekBrains</a>
+	</div>
+
+	<script src="script_pazzle.js"></script>
+</body>
+</html>

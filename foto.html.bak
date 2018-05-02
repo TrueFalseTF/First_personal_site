@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Личный сайт студента GeekBrains</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<div id="content_foto">
+		<div id="header">
+			<a href="index.html"> Главная</a> <span>/</span> 
+			<a href="pazzle.html">Загадки</a> <span>/</span>
+			<a href="guess.html">Угадайка</a> <span>/</span>
+			<a href="guess-2.html">Угадайка мультиплеер</a> <span>/</span>
+			<a href="foto.html">Фотоальбом</a>
+		</div>
+		
+		<h1 id="H1_index">Личный сайт студента GeekBrains</h1>
+
+		<div id="Picture">
+				
+			<a href="img/Elder Gods_ARES.jpg" target="_blank"><img src="img/Elder Gods_ARES.jpg" alt="Elder Gods_ARES"></a>					
+		
+			<a href="img/pablo_carpio_viking.jpg" target="_blank"><img src="img/pablo_carpio_viking.jpg" alt="pablo_carpio_viking"></a>					
+								
+			<a href="img/stellaris.jpg" target="_blank"><img src="img/stellaris.jpg" alt="brotherhood_of_steel"></a>					
+		</div>
+	</div>
+	
+	<div id="footer">
+		Copyright ©; 2017 <a href="https://geekbrains.ru/">GeekBrains</a>
+	</div>
+</body>
+</html>

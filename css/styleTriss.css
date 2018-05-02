@@ -1,0 +1,33 @@
+body {
+	background: black url(../img/triss-merigold-The-Witcher-art.jpeg) top center no-repeat;
+	background-attachment: fixed;
+	color: white;
+	font-family: Calibri;
+}
+
+a {
+	color: #009999;
+}
+
+li {
+	font-style: italic;
+}
+
+img {
+	border-radius: 20px;
+	border: 4px #009999 solid;
+}
+
+#menu-active {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.sale {
+	color: red;
+}
+
+.xit {
+	font-size: 22px;
+	font-weight: bold;
+}

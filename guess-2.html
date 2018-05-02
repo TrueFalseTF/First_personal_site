@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Личный сайт студента GeekBrains</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="content">
+		<div id="header">
+			<a href="index.html">Главная</a> <span>/</span> 
+			<a href="pazzle.html">Загадки</a> <span>/</span>
+			<a href="guess.html">Угадайка</a> <span>/</span>
+			<a href="guess-2.html">Угадайка мультиплеер</a> <span>/</span>
+			<a href="foto.html">Фотоальбом</a>		
+		</div>
+				
+		<h1>Личный сайт студента GeekBrains</h1>
+		
+		<div id="center">
+			<h3>Угадайка мультиплеер</h3>
+			
+			<div id="AnswerResalt">
+				<h4>Значения ваших ответов:</h4>
+				<p id="couter_attempt1"></p>
+				<p id="couter_attempt2"></p>
+				<p id="couter_attempt3"></p>
+				<p id="couter_attempt4"></p>
+				<p id="couter_attempt5"></p>				
+				<p id="couter_attempt6"></p>
+				<p id="couter_attempt7"></p>
+				<p id="couter_attempt8"></p>
+				<p id="couter_attempt9"></p>
+				<p id="couter_attempt10"></p>
+				<p id="couter_attempt11"></p>
+				<p id="couter_attempt12"></p>				
+			</div>
+
+			<div id=box>			
+				<p> Вас приветствует игра - Угадай Число.</p>
+				<p>Правила просты. Двое участников пытаются отгадать число, случайно сгенерированное компьютером.</p>
+				<p>Победит тот, кто сделает это первым. Удачи!</p>
+				<p id="Player_number"></p>				
+				<input type="text" id="UserNumber"> <br>
+				 
+				<span id="Current_answer"></span>
+				<br>
+				<a onclick="playGuess2()"> Ввести ответ </a>
+			</div>
+		</div>
+	</div>	
+	
+	<div id="footer">
+		Copyright ©; 2017 <a href="https://geekbrains.ru/">GeekBrains</a>
+	</div>
+
+	<script src="script_guess-2.js"></script>
+</body>
+</html>
