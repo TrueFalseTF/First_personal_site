@@ -142,11 +142,17 @@ body {
     line-height: 50px;
 }
 
+#button_Triss {
+    
+
+}
+
 #button_Triss a{
     width: 300px;
     height: 25px;
     background-color: #FF8540;
     float: right;
+    
     border-bottom: 2px solid;
     border-top: 2px solid;
     border-color: #338181;
