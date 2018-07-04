@@ -125,16 +125,16 @@ body {
 
 #slider {
     background-color: #9DC7C7;
+    float: left;
+    width: 300px;
+    height: 50px;
     margin-top: 4%;
     margin-left: 39%;
     border-radius: 13%;
     border-bottom: 2px solid;
     border-top: 2px solid;
     border-color: #338181;
-    text-decoration: none;
-    width: 300px;    
-    float: left;
-    height: 50px;
+    text-decoration: none;    
     text-align: center;
     color: #374F88;
     font-size: 20px;
@@ -150,6 +150,8 @@ body {
 #button_Triss a{
     width: 300px;
     height: 25px;
+    margin-top: 7%;
+    margin-right: 0;
     background-color: #FF8540;
     float: right;
     
