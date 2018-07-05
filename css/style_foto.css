@@ -8,13 +8,13 @@
 body {
     position: relative;
     height: 100vh;
-    min-height: 770px;
+    min-height: 680px;
     background-color: #f7f7f7;
     font-family: 'Roboto', sans-serif;
 }
 
-#header {
-    min-width: 1300px;
+#header { 
+    min-width: 1300px;   
     border-bottom: 1px solid #b5b7ba;
     background-color: #9DC7C7;
     margin: 0 auto;
@@ -76,21 +76,22 @@ body {
     max-width: 33%;    
 }
 
-#function_buttons {
+#slider {
+    display: inline-block;
     position: absolute;
-    bottom: 100px;
-    height: 30vh;
-    min-height: 100px; 
-    min-width: 1300px;
+    top: 450px;
+    height: calc(100% - 450px);   
+    width: 70vw;
+    min-width: 900px;
 }
 
-#slider {
+#slider_buttons {    
     background-color: #9DC7C7;
-    float: left;
-    width: 300px;
-    height: 50px;
-    margin-top: 4%;
-    margin-left: 39%;
+    margin: 20px 0 0 60%;
+
+    padding: 8px 12px;        
+    width: 300px;  
+    
     border-radius: 13%;
     border-bottom: 2px solid;
     border-top: 2px solid;
@@ -105,24 +106,16 @@ body {
 
 #button_Triss {
     display: inline-block; 
-    position: relative;
-
-    bottom: 0;
-    right: 0;
-       
+    position: absolute;
+    margin-left: 1037px;    
+    bottom: 100px;      
     width: 301px;
-    height: 25px;    
-
+    height: 25px;
 }
 
-#button_Triss a{
-      
-      
+#button_Triss a{      
     background-color: #FF8540;
-
-    padding: 3.5px 47px;
-        
-    
+    padding: 3.5px 47px;    
     border-bottom: 2px solid;
     border-top: 2px solid;
     border-color: #338181;
