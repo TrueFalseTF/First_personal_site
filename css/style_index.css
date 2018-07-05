@@ -54,7 +54,7 @@ body {
     min-height: calc(100vh - 100px); 
 }
 
-#content #H1_index  {
+#content h1 {
     width: 100%;
     float: left;
     text-align: center;
@@ -63,17 +63,6 @@ body {
     font-weight: 300;
     margin-top: 63px;
     margin-bottom: 63px;
-}
-
-#content h1 {
-    width: 100%;
-    float: left;
-    text-align: center;
-    color: #515359;
-    font-size: 30px;
-    font-weight: 300;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 #content h3 {
