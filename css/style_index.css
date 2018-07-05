@@ -85,99 +85,6 @@ body {
     width: 440px;    
 }
 
-#content_foto {
-    position: absolute;
-    height: 450px;
-    min-width: 1300px;    
-}
-
-#content_foto h1 {
-    width: 100%;    
-    text-align: center;
-    color: #515359;
-    font-size: 30px;
-    font-weight: 300;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-#Picture {    
-    width: 100%;
-    height: 0 auto;    
-    align-items: center; 
-    border-bottom: 4px solid;
-    border-top: 4px solid;
-    border-color: #338181;
-    padding-top: 3px;
-}
-
-#Picture img {
-    max-width: 33%;    
-}
-
-#function_buttons {
-    position: absolute;
-    bottom: 100px;
-    height: 30vh;
-    min-height: 100px; 
-    min-width: 1300px;
-}
-
-#slider {
-    background-color: #9DC7C7;
-    float: left;
-    width: 300px;
-    height: 50px;
-    margin-top: 4%;
-    margin-left: 39%;
-    border-radius: 13%;
-    border-bottom: 2px solid;
-    border-top: 2px solid;
-    border-color: #338181;
-    text-decoration: none;    
-    text-align: center;
-    color: #374F88;
-    font-size: 20px;
-    font-weight: 50px;
-    line-height: 50px;
-}
-
-#button_Triss {
-    display: inline-block; 
-    position: relative;
-
-    bottom: 0;
-    right: 0;
-       
-    width: 301px;
-    height: 25px;    
-
-}
-
-#button_Triss a{
-      
-      
-    background-color: #FF8540;
-
-    padding: 3.5px 47px;
-        
-    
-    border-bottom: 2px solid;
-    border-top: 2px solid;
-    border-color: #338181;
-    text-align: center;
-    text-decoration: none;
-    color: #4671D5;
-    font-size: 12px;
-    font-style: italic;
-    line-height: 25px;
-}
-
-#button_Triss a:hover{
-    background-color: #338181;
-    color: #FF8540;
-}
-
 #comment {
     width: 440px;
     background-color: #9DC7C7;    
@@ -198,6 +105,7 @@ body {
     border-right:2px solid;
     border-color: #338181;
 }
+
 #box_text {
     width: 671px;
     height: 259px;
@@ -240,119 +148,6 @@ body {
     padding-left: 38px;
 }
 
-#content #box_pazzle p {
-    color: #3E3F43;
-    font-size: 18px;
-    font-weight: 100;
-    font-family: 'Tw Cen MT', sans-serif;
-    text-align: left;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-#content #box_pazzle input {
-    border: 1px solid #a0a0a0;
-    background-color: #f5f5f5;
-    width: 457px;
-    height: 34px;
-    padding-left:10px;
-    font-size:20px;
-    font-weight: 100;
-    margin-bottom: 12px;
-}
-
-#content #box_pazzle a {
-    display: block;
-    float: left;
-    background-color:  #9DC7C7;
-    color:  #ffffff;
-    font-size: 24px;
-    font-weight: 300;
-    text-align: center;
-    text-decoration: none;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    padding:11px 51px;
-}
-
-#content #box_pazzle a:hover {
-    background-color: #5ba1d3;
-}
-
-
-#content #box {
-    float: left;
-    background-color: #ffffff;
-    width: 716px;
-    height: 346px;
-    padding-top: 37px;
-    padding-left: 38px;
-}
-
-#content #box p {
-    color: #3E3F43;
-    font-size: 18px;
-    font-weight: 100;
-    font-family: 'Tw Cen MT', sans-serif;
-    text-align: left;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-#content #box input {
-    border: 1px solid #a0a0a0;
-    background-color: #f5f5f5;
-    width: 457px;
-    height: 34px;
-    padding-left:10px;
-    font-size:20px;
-    font-weight: 100;
-    margin-bottom: 12px;
-}
-
-#content #box a {
-    display: block;
-    float: left;
-    background-color:  #9DC7C7;
-    color:  #ffffff;
-    font-size: 24px;
-    font-weight: 300;
-    text-align: center;
-    text-decoration: none;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    padding:11px 51px;
-}
-
-#content #box a:hover {
-    background-color: #5ba1d3;
-}
-
-
-#AnswerResalt {
-    float: right;
-    background-color: #ffffff;
-    width: 421px;
-    height: 430px;
-    padding: 37px;
-}
-
-#AnswerResalt p {
-    color: #3E3F43;
-    font-size: 18px;
-    font-weight: 100;
-    font-family: 'Tw Cen MT', sans-serif; 
-    margin-top: 11px; 
-}
-
-#AnswerResalt h4 {
-    color: #3E3F43;
-    font-size: 22px;
-    font-weight: 100;
-    font-family: 'Tw Cen MT', sans-serif;    
-}
-
-
 #footer {  
     position: absolute;
     bottom: 0;   
@@ -370,4 +165,3 @@ body {
 #footer a {
     color: inherit;
 }
-
