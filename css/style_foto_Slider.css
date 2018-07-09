@@ -42,10 +42,11 @@ body {
     padding: 0 38px;
 }
 
-#content {
-    position: absolute;
-    height: 450px;
-    min-width: 1300px;    
+#content {    
+    height: 0 auto;
+    min-height: calc(100vh - 100px);
+    min-width: 1300px;
+    margin: 0 auto;    
 }
 
 #content h1 {
@@ -63,6 +64,7 @@ body {
 }
 
 #footer {  
+    
     position: absolute;
     bottom: 0;   
     background-color: #9DC7C7;

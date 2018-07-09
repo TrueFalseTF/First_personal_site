@@ -1,4 +1,7 @@
 body {
+	position: relative;
+	min-width: 700px; width: 100vw;
+	min-height: 600px; height: 100vh;
 	background: black url(../img/triss-merigold-The-Witcher-art.jpeg) top center no-repeat;
 	background-attachment: fixed;
 	color: white;
@@ -30,4 +33,37 @@ img {
 .xit {
 	font-size: 22px;
 	font-weight: bold;
+}
+
+.about, .contacts {	
+	position: absolute;
+	overflow: auto;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: 600;	
+}
+
+.about {
+	min-width: 50%; width: 50vw;
+	top: 120px; bottom: 0;
+	border-right: 5px #000000 solid;
+}
+
+.Heder_of_Buttercup {
+	position: absolute;
+	top: 120px; bottom: 125px;
+	left: 50vw; right: 30px;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: right;	
+}
+
+.Heder_of_Buttercup h3 {
+	margin: 0 auto;
+}
+
+
+.contacts {
+	left: calc(50% + 30px); right: 0;
+	top: 170px; bottom: 0;
 }
