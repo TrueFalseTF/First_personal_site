@@ -1,0 +1,28 @@
+body {
+	position: relative;
+	min-width: 700px; width: calc(100vw - 25px);
+	min-height: 600px; height: 100vh;
+	background: black url(../img/triss-merigold-batl-Witcher.jpeg) top center no-repeat;
+	background-attachment: fixed;
+	color: white;
+	font-family: Calibri;
+	font-size: 18px;
+}
+
+a {
+	color: #009999;
+}
+
+li {
+	font-style: italic;
+}
+
+img {
+	border-radius: 20px;
+	border: 4px #009999 solid;
+}
+
+#menu-active {
+	font-size: 20px;
+	font-weight: bold;
+}
