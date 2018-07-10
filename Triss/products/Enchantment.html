@@ -18,7 +18,6 @@
 		</div>
 		<hr>
 		<br>
-		<br>
         <br>
         <details>
             <summary>Нажми, чтобы узнать для кого Меригольд приготовила свои чары ...</summary>
@@ -39,10 +38,32 @@
             <label for="though">Попробуй угодать о каком числе от 0 до 9 она думает и она скажет в какой позиции ты должен брать её:</label> 
             <p><input type="text" name="though" id="though" onkeypress="return isNumberKey(event);" maxlength="1" placeholder="Число..."><output name="love">Нет</output></p>
         </form>
-        <form oninput="if(maturity(date) === true)  { response.value = 'Да!'}; if(maturity(date) === false) {response.value = 'нет...'};">
+        <form oninput="if(maturity(date.value) === true)  { response.value = 'Да!'}; if(maturity(date.value) === false) {response.value = 'нет...'};">
             <label for="date">Напиши дату твоего рождения и Трисс скажет можно ли тебе уже дрочить:</label>
-            <input type="date" name="date"><output name="response"></output>
-        </form>		
+            <input type="date" name="date" id="date"><output name="response"></output>
+        </form>
+        <form oninput="if('overhed' === position.value) { response.value = 'Значит сверху!!'}; if('below' === position.value) { response.value = 'Значит снизу...'};">
+            <p>Как?</p>
+            <label for="overhed">Сверху</label>
+            <input type="radio" name="position" id="overhed" value="overhed">
+            <label for="below">Снизу</label>
+            <input type="radio" name="position" id="below" value="below">
+            <output name="response"></output>
+        </form>
+        <p>Ой, а пакажи мне свой любимый цвет:</p>
+        <input type="color">
+        <form oninput="if((beautiful.value + smart.value + understanding.value) === 'on') {response.value ='Да!'}; if((beautiful.value + smart.value + understanding.value) === 'onon') {response.value ='Да!!'}; if((beautiful.value + smart.value + understanding.value) === 'ononon') {response.value ='Да!!!'};">
+            <p>Какой ты хочешь чтобы я была? &emsp;
+                <label for="beautiful">Красивой</label><input type="checkbox" id="beautiful" name="beautiful">
+                <label for="smart">Умной</label><input type="checkbox" id="smart" name="smart">
+                <label for="understanding">Понимающей</label><input type="checkbox" id="understanding" name="understanding"><output name="response"></output>
+            </p>
+        </form>
+        <!--Ползунок
+        <form oninput="size_of_penis = penis.value">
+            <label for="penis">Покажи размер члена, чтобы Трисс не испугалась</label>
+            <input type="range" name="penis" id="penis" min="15" max="30"><output name="size_of_penis"></output>
+        </form>-->		
     </body>
     <script>
         function isNumberKey(evt) {
@@ -51,20 +72,21 @@
                 return false;
             }
             return true;
-        }       
+        }         
 
-        function maturity (Date_introduce) {
-            var date = new Date();
-            if((date.getFullYear() - Date_introduce.getFullYear()) > 18 ){
+        function maturity (introduce) {                    
+            var date = new Date();            
+            var Date_introduce = new Date(introduce);
+            if((date.getFullYear() - Date_introduce.getFullYear()) > 18) {
                 return true;
-            } else if ((date.getFullYear() - Date_introduce.getFullYear()) === 18) {
+            } else if((date.getFullYear() - Date_introduce.getFullYear()) === 18) {
                 if((date.getMonth() - Date_introduce.getMonth()) > 0) {
                     return true;
                 } else if((date.getMonth() - Date_introduce.getMonth()) === 0) {
                     if((date.getDate() - Date_introduce.getDate()) > 0) {
                         return true;
-                    } else if ((date.getdate() - Date_introduce.getDate()) === 0) {
-                        alert("С днём рождения герой!");
+                    } else if ((date.getDate() - Date_introduce.getDate()) === 0) {
+                        alert("О, ты только сегодня стал взрослым, поздравляю герой!!!");
                         return true;
                     } else {
                         return false;
