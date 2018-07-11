@@ -50,20 +50,17 @@
             <input type="radio" name="position" id="below" value="below">
             <output name="response"></output>
         </form>
+
         <p>Ой, а пакажи мне свой любимый цвет:</p>
         <input type="color">
-        <form oninput="if((beautiful.value + smart.value + understanding.value) === 'on') {response.value ='Да!'}; if((beautiful.value + smart.value + understanding.value) === 'onon') {response.value ='Да!!'}; if((beautiful.value + smart.value + understanding.value) === 'ononon') {response.value ='Да!!!'};">
+        
+        <form onchange="if(beautiful.checked === false && smart.checked === false && understanding.checked === false) {response.value = ''} else if((beautiful.checked === true && smart.checked === false && understanding.checked === false) || (beautiful.checked === false && smart.checked === true && understanding.checked === false) || (beautiful.checked === false && smart.checked === false && understanding.checked === true)) {response.value ='Да!'} else if((beautiful.checked === true && smart.checked === true && understanding.checked === false) || (beautiful.checked === true && smart.checked === false && understanding.checked === true) || (beautiful.checked === false && smart.checked === true && understanding.checked === true)) {response.value ='Да!!'} else if(beautiful.checked === true && smart.checked === true && understanding.checked === true) {response.value ='Да!!!'};">
             <p>Какой ты хочешь чтобы я была? &emsp;
                 <label for="beautiful">Красивой</label><input type="checkbox" id="beautiful" name="beautiful">
                 <label for="smart">Умной</label><input type="checkbox" id="smart" name="smart">
-                <label for="understanding">Понимающей</label><input type="checkbox" id="understanding" name="understanding"><output name="response"></output>
+                <label for="understanding">Понимающей</label><input type="checkbox" id="understanding" name="understanding"><output name="response" ></output>
             </p>
-        </form>
-        <!--Ползунок
-        <form oninput="size_of_penis = penis.value">
-            <label for="penis">Покажи размер члена, чтобы Трисс не испугалась</label>
-            <input type="range" name="penis" id="penis" min="15" max="30"><output name="size_of_penis"></output>
-        </form>-->		
+        </form>        	
     </body>
     <script>
         function isNumberKey(evt) {
@@ -96,8 +93,7 @@
                 }
             } else {
                 return false;
-            }
-            
-        }        
+            }            
+        }              
     </script>
 </html>
