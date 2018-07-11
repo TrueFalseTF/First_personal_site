@@ -1,6 +1,6 @@
 body {
 	position: relative;
-	min-width: 700px; width: calc(100vw - 25px);
+	min-width: 900px; width: calc(100vw - 25px);
 	min-height: 600px; height: 100vh;
 	background: black url(../img/triss-merigold-batl-Witcher.jpeg) top center no-repeat;
 	background-attachment: fixed;
@@ -25,4 +25,17 @@ img {
 #menu-active {
 	font-size: 20px;
 	font-weight: bold;
+}
+
+#content {
+ 	
+}
+
+#wish_field {
+	position: absolute;
+	top: 130px; right: 0;
+}
+
+textarea {
+	resize: none;	
 }
