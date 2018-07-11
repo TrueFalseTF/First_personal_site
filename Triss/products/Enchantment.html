@@ -63,10 +63,12 @@
             </form> 
         </div>
         
-        <div id="wish_field">            
+        <div id="wish_field">
+            <form>            
             <textarea id="wishes" placeholder="Твои пожелания..."></textarea><br>
             <input type="button" onclick="Response_Triss();" value="Пожелать">
-            <input type="reset" value="Очистить">
+            <input type="reset" value="Очистить" onclick="document.getElementById('response_Triss').innerHTML = '';">
+            </form>
             
             <div id="response_Triss"></div>                       
         </div>
@@ -107,8 +109,9 @@
         
         function Response_Triss() {
             var wishes = document.getElementById("wishes").value;
-            var first_part_wishes =
-            document.getElementById("response_Triss").innerHTML = "<ruby>" + first_part_wishes + wishes + "<rt> Спасибо! И я люблю Тебя!</rt></ruby>";            
+            var first_part_wishes = wishes.slice(0, 14);            
+            var second_part_wishes = wishes.slice(14);
+            document.getElementById("response_Triss").innerHTML = "<p><ruby>" + first_part_wishes + "<rt> Спасибо! И я люблю Тебя!</rt></ruby>" + second_part_wishes + "</p>";            
         }
     </script>
 </html>
