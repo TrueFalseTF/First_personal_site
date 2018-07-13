@@ -6,6 +6,11 @@
     <link rel="stylesheet" type="text/css" href="css/style_img_playboy.css">
 </head>
 <body>
-    <img src="triss-merigold-playboy-2011.jpg">    
+    <div id="playboy_page">
+        <img src="triss-merigold-playboy-2011.jpg" onmouseover="toolTip('Наконец-то ты пришёл...');" onmouseout="toolTip();">
+        <div class="hidden_div" id="_01" onmouseover="toolTip('Нравится мой кинжал?');" onmouseout="toolTip();"></div>
+    </div>
+    <div id="toolTip"></div>
+    <script type="text/javascript" src="../script_tooltip.js"></script>    
 </body>
 </html>
