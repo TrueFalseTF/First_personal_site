@@ -1,4 +1,4 @@
-var password = "хуй"
+var password = "зараза"
 
 function password_verification() {
 	var user_password = prompt("Введите пароль");

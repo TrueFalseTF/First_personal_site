@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<div class="Heder">
-			<h1>Купите эликсиры по рецептам нашей дорогой Трисс.</h1>
+			<h1>Здесь Трисс демонстрирует JS волшебство.</h1>
 
 			<a href="../Triss.html">На главную страницу Трисс</a><span>/</span>
 			<a href="../Who_she.html">Кто Она</a><span>/</span>
@@ -26,27 +26,27 @@
 
             <details>
                 <summary>Если узнал для кого все эти чары - нажми.</summary>
-                <p>Знай же что она хочет чтобы ты пользовался <ruby>ещё и ей.<rt>еби её</rt></rt></ruby></p>
+                <p>Знай же что она хочет чтобы ты пользовался всеми предложенными тебе <ruby>возможностями.<rt>смелее приступай к делу</rt></rt></ruby></p>
             </details>
 
             <p>Учти, Трисс очень трудолюбива и у неё осталось не так много чар.</p>
             <progress max="100" value="30"></progress>
-            <p>Дай ей отсосать у тебя немного сил.</p>
+            <p>Твой прогресс вдохновит чародейку, так что, что нужно тебе, нужно Трисс.</p>
 
-            <form id="Love" oninput="love.value = (though.value * Math.random()*10).toFixed(0)">
-                <p>Но Трисс всё ещё может дать тебе.</p>
-                <label for="though">Попробуй угодать о каком числе от 0 до 9 она думает и она скажет в какой позиции ты должен брать её:</label> 
+            <form id="Love" oninput="if(though.value === '0') {though.value = 1;}; love.value = (though.value * Math.random()*10).toFixed(0)">
+                <p>Но Трисс всё ещё может дать тебе очень много.</p>
+                <label for="though">Попробуй угодать о каком числе от 0 до 9 она думает и она скажет какое число будет для тебя счастливым:</label> 
                 <p><input type="text" name="though" id="though" onkeypress="return isNumberKey(event);" maxlength="1" placeholder="Число..."><output name="love">Нет</output></p>
             </form>
             <form id="date_response" oninput="if(maturity(date.value) === true)  { response.value = 'Да!'}; if(maturity(date.value) === false) {response.value = 'нет...'};">
-                <label for="date">Напиши дату твоего рождения и Трисс скажет можно ли тебе уже дрочить:</label>
+                <label for="date">Напиши дату твоего рождения и Трисс скажет можно ли тебе уже заниматься чародейством:</label>
                 <input type="date" name="date" id="date"><output name="response"></output>
             </form>
-            <form oninput="if('overhed' === position.value) { response.value = 'Значит сверху!!'}; if('below' === position.value) { response.value = 'Значит снизу...'};">
-                <p>Как?</p>
-                <label for="overhed">Сверху</label>
+            <form oninput="if('overhed' === position.value) { response.value = 'Тогда будь внимателен к моим движениям!!'}; if('below' === position.value) { response.value = 'Ну попробуй...'};">
+                <p>"Сможешь удивить меня тем что уже знаешь?"</p>
+                <label for="overhed">Нет</label>
                 <input type="radio" name="position" id="overhed" value="overhed">
-                <label for="below">Снизу</label>
+                <label for="below">Да</label>
                 <input type="radio" name="position" id="below" value="below">
                 <output name="response"></output>
             </form>
